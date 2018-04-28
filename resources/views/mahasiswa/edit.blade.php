@@ -40,7 +40,7 @@
         <tr>
             <td>Alamat</td>
             <td>:</td>
-            <td><textarea name="alamat" cols="30" rows="10" >{{$mahasiswa->alamat}}</textarea></td>
+            <td><textarea name="alamat" cols="30" rows="10">{{$mahasiswa->alamat}}</textarea></td>
         </tr>
         <tr>
             <td>Tanggal Lahir</td>

@@ -16,7 +16,7 @@ class MahasiswaController extends Controller
     public function index()
     {
         $mahasiswa = Mahasiswa::orderBy('id', 'desc')->get();
-        return view('mahasiswa.index', compact('mahasiswa'));
+        return view('admin.mahasiswa.index', compact('mahasiswa'));
     }
 
     /**
@@ -26,7 +26,7 @@ class MahasiswaController extends Controller
      */
     public function create()
     {
-        return view('mahasiswa.create');
+        return view('admin.mahasiswa.create');
     }
 
     /**
@@ -62,7 +62,7 @@ class MahasiswaController extends Controller
     public function show($id)
     {
         $mahasiswa = Mahasiswa::find($id);
-        return view ('mahasiswa.show', compact('mahasiswa'));
+        return view ('admin.mahasiswa.show', compact('mahasiswa'));
     }
 
     /**
@@ -74,7 +74,7 @@ class MahasiswaController extends Controller
     public function edit($id)
     {
         $mahasiswa = Mahasiswa::find($id);
-        return view('mahasiswa.edit', compact('mahasiswa'));
+        return view('admin.mahasiswa.edit', compact('mahasiswa'));
     }
 
     /**

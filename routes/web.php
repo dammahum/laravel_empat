@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('mahasiswa', 'MahasiswaController');
+
+Route::prefix('admin')->group(function () {
+    Route::resource('mahasiswa', 'MahasiswaController');
+});

@@ -1,5 +1,5 @@
 <br>
-    <a href="{{route('mahasiswa.create')}}"> Create Article </a>
+    <a href="{{route('mahasiswa.create')}}"> Create Mahasiswa </a>
 <br>
 <br>
 
